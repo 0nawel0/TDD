@@ -3,13 +3,18 @@ class CurrencyConvertor:
         convert = 0
         try:
             amount = float(amount)
+            
             if amount < 0:
-                raise ValueError()
+                raise SyntaxError()
             convert = round(amount*0.94, 1) 
-        except ValueError:
+        except SyntaxError:
+            print(amount)
             print('Entrez une valeur positive')
             convert = 0
-        except:
+        except TypeError:
+            print("L'entrée doit etre un nombre")
             convert = 0
+        except:
+            convert = None
 
         return convert
