@@ -37,3 +37,11 @@ def test_Convert_Negative_Value():
     convert = CurrencyConvertor.Convertor(eur)
 
     assert convert == chf
+
+def test_Convert_With_String_Value():
+    eur = "m"
+    chf = None
+
+    convert = CurrencyConvertor.Convertor(eur)
+
+    assert convert == chf
