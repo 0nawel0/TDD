@@ -1,3 +1,9 @@
 class CurrencyConvertor:
     def Convertor(amount):
-        return round(amount*0.94, 1) 
+        convert = 0
+        try:
+            convert = round(amount*0.94, 1) 
+        except:
+            convert = 0
+        
+        return convert
