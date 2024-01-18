@@ -1,10 +1,11 @@
 import pytest
-from src.convertor import StringCalculator
+from src.currency_convertor import CurrencyConvertor
 
-def testConvertEurToChf():
+def test_Convert_Eur_To_Chf():
     eur = 10
-    eurToChf = 9.4
+    eur_To_Chf = 9.4
 
-    convert = StringCalculator.Convertor(eur)
+    # Appel la fonction qui converti les eur en chf
+    convert = CurrencyConvertor.Convertor(eur)
 
-    assert convert == eurToChf
+    assert convert == eur_To_Chf
