@@ -3,7 +3,8 @@ from src.currency_convertor import CurrencyConvertor
 
 @pytest.mark.parametrize("eur, chf", [
     (10, 9.4),
-    (20, 18.8), # test case
+    (20, 18.8),
+    (30, 28.2) # test case
 ])
 def test_Convert_10_Eur_To_Chf(eur, chf):
 
