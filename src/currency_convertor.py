@@ -3,7 +3,7 @@ class CurrencyConvertor:
         convert = 0
         try:
             amount = float(amount)
-            if (amount<0):
+            if amount < 0:
                 raise ValueError()
             convert = round(amount*0.94, 1) 
         except ValueError:
