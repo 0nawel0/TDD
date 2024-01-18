@@ -1,4 +1,3 @@
 class CurrencyConvertor:
     def Convertor(amount):
-        chf = amount*0.94
-        return round(chf, 1) 
+        return round(amount*0.94, 1) 
