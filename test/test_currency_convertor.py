@@ -1,11 +1,13 @@
 import pytest
 from src.currency_convertor import CurrencyConvertor
 
-def test_Convert_Eur_To_Chf():
-    eur = 20
-    eur_To_Chf = 18.8
+@pytest.mark.parametrize("eur, chf", [
+    (10, 9.4),
+    (20, 18.8), # test case
+])
+def test_Convert_10_Eur_To_Chf(eur, chf):
 
     # Appel la fonction qui converti les eur en chf
     convert = CurrencyConvertor.Convertor(eur)
 
-    assert convert == eur_To_Chf
+    assert convert == chf
