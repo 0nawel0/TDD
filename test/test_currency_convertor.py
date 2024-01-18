@@ -23,7 +23,7 @@ def test_Convert_Null_Value():
     assert convert == chf
 
 def test_Convert_String_Number_Value():
-    eur = "10"
+    eur = '10'
     chf = 9.4
 
     convert = CurrencyConvertor.Convertor(eur)
