@@ -6,7 +6,7 @@ from src.currency_convertor import CurrencyConvertor
     (20, 18.8),
     (30, 28.2), # test case
 ])
-def test_Convert_10_Eur_To_Chf(eur, chf):
+def test_Convert_Eur_To_Chf(eur, chf):
 
     # Appel la fonction qui converti les eur en chf
     convert = CurrencyConvertor.Convertor(eur)
