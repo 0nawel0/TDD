@@ -2,7 +2,7 @@ import pytest
 from src.currency_convertor import CurrencyConvertor
 
 @pytest.mark.parametrize("eur, chf", [
-    (10, 9.4),
+    (10,9.4),
     (20, 18.8),
     (30, 28.2) # test case
 ])
